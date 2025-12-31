@@ -29,7 +29,6 @@ jobs:
         username: ${{ secrets.SSH_USER }}
         key: ${{ secrets.SSH_KEY }}
         source: fastapi-cicd.tar.gz, docker-compose.yml
-
         target: "~/apps/fastapi-cicd"
 
     - name: Deploy on server
