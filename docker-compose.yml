@@ -1,0 +1,7 @@
+services:
+  fastapi:
+    image: fastapi-cicd:latest  # matches the image you copied
+    container_name: fastapi_app
+    ports:
+      - "8000:8000"
+    restart: unless-stopped
